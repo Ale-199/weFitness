@@ -16,7 +16,7 @@ const workourtSchema = new Schema(
       required: true,
     },
     sets: {
-      type: string,
+      type: String,
       required: true,
     },
     //Associating every workout document with a particular user.
