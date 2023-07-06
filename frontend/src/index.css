@@ -1,0 +1,60 @@
+/* ============== Google Fonts ==================== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;900&display=swap");
+
+/* ============== Variable CSS =====================*/
+:root {
+  --primary-color: #1b1c1e;
+  --second-color: #7f7f7f;
+  --third-color: #f2f2f2;
+  --text-color: #ffffff;
+  /* ======== Font ========= */
+  --body-font: "Poppins", sans-serif;
+}
+
+/* ================= Base =================== */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: var(--body-font);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* ======================= Resuable CSS ======================= */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0.75rem 2rem;
+  line-height: 1;
+  border-radius: 0.5rem;
+  display: inline-block;
+  background-color: var(--second-color);
+  font-weight: 200;
+  font-size: 1.5rem;
+}

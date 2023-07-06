@@ -1,0 +1,7 @@
+frontEnd:
+1. set up the pages 
+2. define the routes in App.js
+3. write the css for pages
+4. feching data for each page.
+5. define the proxy in package.json file, in order to fech the data from backend.
+6. create the context and the usecontext hook

@@ -1,0 +1,70 @@
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+}
+
+.nav__header {
+  background-color: var(--primary-color);
+}
+
+.home__logo {
+  display: flex;
+  color: var(--text-color);
+}
+
+.bxs-objects-horizontal-center {
+  font-size: 3rem;
+  rotate: 90deg;
+}
+
+.stroke-text {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+.nav__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  gap: 1rem;
+  width: 20%;
+}
+
+.nav__loginAndSignup {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  color: white;
+}
+
+.nav__loginAndSignup > :nth-child(1) {
+  color: white;
+  transition: all 0.3s ease-in;
+}
+
+.nav__loginAndSignup > :nth-child(1):hover {
+  color: white;
+  scale: 1.1;
+}
+
+.nav__loginAndSignup > :nth-child(3) {
+  padding: 0.1rem 0.5rem;
+  border: 2px solid var(--text-color);
+  border-radius: 8%;
+  color: white;
+  transition: all 0.3s ease-in;
+}
+
+.nav__loginAndSignup > :nth-child(3):hover {
+  color: white;
+  scale: 1.1;
+}
+
+.nav__loginAndSignup > :nth-child(2) {
+  font-weight: 100;
+}
