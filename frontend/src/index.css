@@ -55,6 +55,6 @@ button {
   border-radius: 0.5rem;
   display: inline-block;
   background-color: var(--second-color);
-  font-weight: 200;
+  font-weight: 600;
   font-size: 1.5rem;
 }

@@ -48,7 +48,7 @@
 }
 
 .nav__loginAndSignup > :nth-child(1):hover {
-  color: white;
+  color: var(--second-color);
   scale: 1.1;
 }
 
@@ -61,7 +61,7 @@
 }
 
 .nav__loginAndSignup > :nth-child(3):hover {
-  color: white;
+  color: var(--second-color);
   scale: 1.1;
 }
 
