@@ -7,6 +7,7 @@
   --second-color: #7f7f7f;
   --third-color: #f2f2f2;
   --text-color: #ffffff;
+  --bg-color: #fafafa;
   /* ======== Font ========= */
   --body-font: "Poppins", sans-serif;
 }
@@ -57,4 +58,12 @@ button {
   background-color: var(--second-color);
   font-weight: 600;
   font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.bg {
+  background-color: var(--bg-color);
+  position: relative;
+  width: 100%;
+  height: 91.5vh;
 }

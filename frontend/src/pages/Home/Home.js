@@ -6,11 +6,12 @@ export default function Home() {
       <div className="container home__container">
         <h1>Let's record your fitness Today!</h1>
         <h3>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+          laboriosam iste sed numquam debitis ut earum officia ad similique
+          expedita sint repudiandae minus, in a corporis! Unde nulla, minima
+          aliquam perferendis magni earum eligendi voluptate debitis consectetur
+          laboriosam illum iste natus porro, corporis in soluta officia fugit
+          fugiat repellat! Quaerat.
         </h3>
         <button className="btn home__btn">Get started</button>
       </div>

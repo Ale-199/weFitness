@@ -1,0 +1,40 @@
+.login {
+  background-color: var(--third-color);
+  border-radius: 50px;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem 3rem;
+}
+
+.login__container {
+  padding: 12rem;
+}
+
+.login > :nth-child(1) {
+  color: var(--second-color);
+  font-weight: 600;
+}
+
+.login > :nth-child(2) {
+  background-color: var(--bg-color);
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 0.5rem;
+}
+
+.login > :nth-child(3) {
+  background-color: var(--bg-color);
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 0.5rem;
+}
+
+.login > :nth-child(4) {
+  width: 30%;
+  margin: 0 auto;
+  font-weight: 300;
+  transition: all 0.3s ease-in;
+}

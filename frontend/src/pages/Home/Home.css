@@ -21,11 +21,13 @@
   margin: 0 auto;
   width: 35%;
   font-size: 3rem;
+  line-height: 5rem;
 }
 
 .home__container > :nth-child(2) {
   width: 60%;
   margin: 2rem auto;
+  letter-spacing: 1px;
 }
 
 .home__container > :nth-child(3) {
