@@ -3,12 +3,12 @@ import WorkoutDetails from "../../components/WorkoutDetails";
 import Workoutform from "../../components/Workoutform";
 export default function Dashboard() {
   return (
-    <div className="bg">
+    <div className="dashboard__bg">
       <div className="dashboard__container container">
-        <div>
+        <div className="dashboard__left">
           <WorkoutDetails />
         </div>
-        <div>
+        <div className="dashboard__right">
           <Workoutform />
         </div>
       </div>
