@@ -1,0 +1,51 @@
+.signup {
+  background-color: var(--third-color);
+  border-radius: 50px;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem 3rem;
+}
+
+.signup__container {
+  padding: 12rem;
+}
+
+.signup > :nth-child(1) {
+  color: var(--second-color);
+  font-weight: 600;
+}
+
+.signup > :nth-child(2) {
+  background-color: var(--bg-color);
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 0.5rem;
+}
+
+.signup > :nth-child(3) {
+  background-color: var(--bg-color);
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 0.5rem;
+}
+
+.signup > :nth-child(4) {
+  background-color: var(--bg-color);
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 0.5rem;
+}
+
+.signup > :nth-child(5) {
+  width: 40%;
+  margin: 0 auto;
+  font-weight: 300;
+  transition: all 0.3s ease-in;
+}
+
+.signup > :nth-child(5):hover {
+  scale: 1.1;
+}
