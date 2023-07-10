@@ -20,7 +20,7 @@ const userSchema = new Schema({
 });
 
 //static signup function.
-userSchema.static.signup = async function (userName, email, password) {
+userSchema.statics.signup = async function (userName, email, password) {
   if (!email || !password || !userName) {
     throw Error("All fields must be filled.");
   }
@@ -46,12 +46,13 @@ userSchema.static.signup = async function (userName, email, password) {
 };
 
 //static login method
-userSchema.static.login = async function (email, password) {
+userSchema.statics.login = async function (email, password) {
   if (!email || !password) {
     throw Error("All fields must be filled.");
   }
 
   const user = await this.findOne({ email });
+
   if (!user) {
     throw Error("Invalid account, please try again.");
   }
@@ -61,7 +62,7 @@ userSchema.static.login = async function (email, password) {
     throw Error("Invalid account, please try again.");
   }
 
-  return usre;
+  return user;
 };
 
 module.exports = mongoose.model("User", userSchema);

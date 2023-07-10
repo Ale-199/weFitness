@@ -30,3 +30,16 @@
 .form__btn:hover {
   scale: 1.1;
 }
+
+input.error {
+  border: 1px solid red;
+}
+
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid red;
+  color: red;
+  border-radius: 5px;
+  margin: 20px 0;
+}

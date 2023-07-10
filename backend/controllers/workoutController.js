@@ -42,7 +42,7 @@ const createWorkout = async (req, res) => {
     emptyFields.push("reps");
   }
   if (!sets) {
-    emptyFields.push(sets);
+    emptyFields.push("sets");
   }
   if (emptyFields.length > 0) {
     return res
@@ -51,7 +51,7 @@ const createWorkout = async (req, res) => {
   }
 
   try {
-    const user_id = req.user_id;
+    const user_id = req.user._id;
     const workout = await Workout.create({
       title,
       weight,

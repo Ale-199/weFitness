@@ -9,7 +9,7 @@ const requireAuth = async (req, res, next) => {
   }
 
   //Token in authorization property will be like 'bearer ewrgd234dgdsg3.23425dsfgs4523t.2343fsdt23'
-  const token = authorization.split("")[1];
+  const token = authorization.split(" ")[1];
 
   try {
     const { _id } = jwt.verify(token, process.env.SECRET);
