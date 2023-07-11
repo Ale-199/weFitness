@@ -68,3 +68,29 @@
 .nav__loginAndSignup > :nth-child(2) {
   font-weight: 100;
 }
+
+.loggout {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.loggout > :nth-child(1) {
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.loggout__btn {
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  background-color: white;
+  color: black;
+  padding: 0.8rem;
+}
+
+.loggout__btn:hover {
+  color: white;
+  background-color: transparent;
+}

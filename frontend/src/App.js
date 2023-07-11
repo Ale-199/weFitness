@@ -9,6 +9,7 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 
 function App() {
   const { user } = useAuthContext();
+  
   return (
     <div>
       <BrowserRouter>

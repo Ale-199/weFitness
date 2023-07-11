@@ -1,6 +1,11 @@
 import "./Home.css";
+import { useNavigate } from "react-router-dom";
+import { useAuthContext } from "../../hooks/useAuthContext";
 
 export default function Home() {
+  const navigate = useNavigate();
+  const { user } = useAuthContext();
+
   return (
     <div className="home__background">
       <div className="container home__container">
@@ -13,7 +18,12 @@ export default function Home() {
           laboriosam illum iste natus porro, corporis in soluta officia fugit
           fugiat repellat! Quaerat.
         </h3>
-        <button className="btn home__btn">Get started</button>
+        <button
+          className="btn home__btn"
+          onClick={() => navigate(user ? "/dashboard" : "/login")}
+        >
+          Get started
+        </button>
       </div>
     </div>
   );
