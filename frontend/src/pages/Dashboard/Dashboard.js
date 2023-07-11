@@ -19,7 +19,7 @@ export default function Dashboard() {
         headers: { Authorization: `Bearer ${user.token}` },
       });
       const json = await response.json();
-      console.log(json);
+      console.table(json);
 
       if (response.ok) {
         dispatch({ type: "SET_WORKOUTS", payload: json });
