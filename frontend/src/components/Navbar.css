@@ -78,7 +78,7 @@
 .loggout > :nth-child(1) {
   color: var(--text-color);
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .loggout__btn {
@@ -91,6 +91,6 @@
 }
 
 .loggout__btn:hover {
-  color: white;
+  color: var(--second-color);
   background-color: transparent;
 }

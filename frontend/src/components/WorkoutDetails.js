@@ -1,6 +1,8 @@
 import "./WorkoutDetails.css";
 import { useWorkoutsContext } from "../hooks/useWorkoutsContext";
 import { useAuthContext } from "../hooks/useAuthContext";
+// date fns
+import formatDistanceToNow from "date-fns/formatDistanceToNow";
 
 export default function WorkoutDetails({ workout }) {
   const { dispatch } = useWorkoutsContext();
@@ -36,6 +38,9 @@ export default function WorkoutDetails({ workout }) {
       <h4>Weight in (kg): {workout.weight}</h4>
       <h4>Reps: {workout.reps}</h4>
       <h4>Sets: {workout.sets}</h4>
+      <p>
+        {formatDistanceToNow(new Date(workout.createdAt), { addSuffix: true })}
+      </p>
     </div>
   );
 }

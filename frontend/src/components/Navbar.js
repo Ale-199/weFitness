@@ -23,7 +23,7 @@ export default function Navbar() {
         <nav className="nav__links">
           {user && (
             <div className="loggout">
-              <span>Welcome, {user.userName}</span>
+              <span>Welcome, {user.userName.toUpperCase()}</span>
               <span onClick={handleClick} className="loggout__btn btn">
                 Log out
               </span>
