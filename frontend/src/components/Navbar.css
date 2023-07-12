@@ -6,6 +6,11 @@
 
 .nav__header {
   background-color: var(--primary-color);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99;
 }
 
 .home__logo {
@@ -25,9 +30,6 @@
 }
 
 .nav__links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-weight: 700;
   font-size: 1.5rem;
   gap: 1rem;
@@ -72,7 +74,9 @@
 .loggout {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
+  padding: 0rem 2rem;
+  width: 100%;
 }
 
 .loggout > :nth-child(1) {
@@ -85,12 +89,107 @@
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease-in;
-  background-color: white;
-  color: black;
+  background-color: var(--text-color);
+  color: var(--primary-color);
   padding: 0.8rem;
 }
 
 .loggout__btn:hover {
   color: var(--second-color);
   background-color: transparent;
+}
+
+.nav__close,
+.nav__toggle {
+  display: none;
+}
+
+/*=============== BREAKPOINTS ===============*/
+
+@media screen and (max-width: 1280px) {
+}
+/* -----------------for large devices-------------- */
+@media screen and (max-width: 1112.5px) {
+  .nav__container {
+    width: 95%;
+  }
+}
+/*-------------------for medium devices--------------- */
+@media screen and (max-width: 896.5px) {
+  .nav__container {
+    padding: 1rem 1rem;
+  }
+  .nav__loginAndSignup {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    color: white;
+  }
+  
+}
+/* ---------------------for tablets----------------- */
+@media screen and (max-width: 642.5px) {
+  .small__nav {
+    position: fixed;
+    left: 110%;
+    width: 50%;
+    height: 95%;
+    background-color: var(--second-color);
+    padding: 3rem 1.5rem 1.5rem;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 1.5rem;
+    transition: all 0.3s ease-in;
+  }
+  .show-nav {
+    left: 50%;
+  }
+
+  .nav__links {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .nav__close,
+  .nav__toggle {
+    display: block;
+  }
+
+  .nav__loginAndSignup {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav__loginAndSignup > span {
+    display: none;
+  }
+
+  .nav__close {
+    position: absolute;
+    top: 0.7rem;
+    right: 1.8rem;
+    font-size: 2.5rem;
+    rotate: 45deg;
+    color: var(--text-color);
+  }
+  .nav__toggle {
+    color: var(--text-color);
+    font-size: 2rem;
+  }
+
+  .nav__container {
+    width: 100%;
+  }
+  .nav__container {
+    padding: 1rem 2rem;
+  }
+  .loggout{
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+}
+/* ----------------for mobile devices------------------ */
+@media screen and (max-width: 400px) {
 }

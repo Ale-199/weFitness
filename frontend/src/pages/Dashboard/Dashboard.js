@@ -34,15 +34,15 @@ export default function Dashboard() {
   return (
     <div className="dashboard__bg">
       <div className="dashboard__container container">
+        <div className="dashboard__right">
+          <Workoutform />
+        </div>
+
         <div className="dashboard__left">
           {workouts &&
             workouts.map((workout) => (
               <WorkoutDetails workout={workout} key={workout._id} />
             ))}
-          {!workouts && <div>Not recording</div>}
-        </div>
-        <div className="dashboard__right">
-          <Workoutform />
         </div>
       </div>
     </div>

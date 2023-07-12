@@ -7,7 +7,7 @@
   flex-direction: column;
   gap: 2rem;
   padding: 4rem 3rem;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 .login__container {
@@ -37,6 +37,7 @@
   width: 30%;
   margin: 0 auto;
   font-weight: 300;
+  text-align: center;
   transition: all 0.3s ease-in;
 }
 
@@ -53,4 +54,40 @@
 
 .signupLink {
   text-decoration: underline;
+}
+
+/*=============== BREAKPOINTS ===============*/
+
+@media screen and (max-width: 1280px) {
+  .login {
+    width: 80%;
+    gap: 2rem;
+  }
+}
+/* -----------------for large devices-------------- */
+@media screen and (max-width: 1112.5px) {
+  .login {
+    width: 100%;
+  }
+}
+/*-------------------for medium devices--------------- */
+@media screen and (max-width: 896.5px) {
+  .login > :nth-child(4) {
+    width: 50%;
+  }
+  .login__container {
+    padding: 12rem 8rem;
+  }
+}
+/* ---------------------for tablets----------------- */
+@media screen and (max-width: 642.5px) {
+  .login__container {
+    padding: 12rem 3rem;
+  }
+}
+/* ----------------for mobile devices------------------ */
+@media screen and (max-width: 400px) {
+  .login__container {
+    padding: 12rem 1rem;
+  }
 }

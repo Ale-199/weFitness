@@ -43,3 +43,21 @@ div.error {
   border-radius: 5px;
   margin: 20px 0;
 }
+
+/*=============== BREAKPOINTS ===============*/
+
+@media screen and (max-width: 1280px) {
+}
+/* -----------------for large devices-------------- */
+@media screen and (max-width: 1112.5px) {
+}
+/*-------------------for medium devices--------------- */
+@media screen and (max-width: 896.5px) {
+
+}
+/* ---------------------for tablets----------------- */
+@media screen and (max-width: 642.5px) {
+}
+/* ----------------for mobile devices------------------ */
+@media screen and (max-width: 400px) {
+}

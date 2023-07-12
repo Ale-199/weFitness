@@ -50,3 +50,40 @@
 .signup > :nth-child(5):hover {
   scale: 1.1;
 }
+
+/*=============== BREAKPOINTS ===============*/
+
+@media screen and (max-width: 1280px) {
+  .signup {
+    width: 80%;
+    gap: 2rem;
+  }
+}
+/* -----------------for large devices-------------- */
+@media screen and (max-width: 1112.5px) {
+  .signup {
+    width: 100%;
+  }
+}
+/*-------------------for medium devices--------------- */
+@media screen and (max-width: 896.5px) {
+  .signup__container {
+    padding: 12rem 8rem;
+  }
+}
+/* ---------------------for tablets----------------- */
+@media screen and (max-width: 642.5px) {
+  .signup__container {
+    padding: 12rem 3rem;
+  }
+
+  .signup > :nth-child(5) {
+    width: 55%;
+  }
+}
+/* ----------------for mobile devices------------------ */
+@media screen and (max-width: 400px) {
+  .signup__container {
+    padding: 12rem 1rem;
+  }
+}
