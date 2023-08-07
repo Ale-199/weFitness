@@ -14,7 +14,7 @@ export default function Workoutform() {
   const [error, setError] = useState(null);
   const [emptyFields, setEmptyFields] = useState([]);
 
-  const handleSumit = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!user) {
@@ -24,7 +24,7 @@ export default function Workoutform() {
 
     const workout = { title, weight, reps, sets };
 
-    const reponse = await fetch("/api/workouts", {
+    const response = await fetch("/api/workouts", {
       method: "POST",
       body: JSON.stringify(workout),
       headers: {
@@ -33,14 +33,14 @@ export default function Workoutform() {
       },
     });
 
-    const json = await reponse.json();
+    const json = await response.json();
 
-    if (!reponse.ok) {
+    if (!response.ok) {
       setError(json.error);
       setEmptyFields(json.emptyFields);
     }
 
-    if (reponse.ok) {
+    if (response.ok) {
       setError(null);
       setTitle("");
       setWeight("");
@@ -51,7 +51,7 @@ export default function Workoutform() {
   };
 
   return (
-    <form className="workoutForm__container" onSubmit={handleSumit}>
+    <form className="workoutForm__container" onSubmit={handleSubmit}>
       <h2>Add A New Workout</h2>
       <div className="form__input">
         <h3>Exercise Title:</h3>

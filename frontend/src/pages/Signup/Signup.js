@@ -23,16 +23,19 @@ export default function Signup() {
             type="text"
             placeholder="User Name:"
             onChange={(e) => setUserName(e.target.value)}
+            value={userName}
           />
           <input
             type="email"
             placeholder="Email:"
             onChange={(e) => setEmail(e.target.value)}
+            value={email}
           />
           <input
             type="password"
             placeholder="Password:"
             onChange={(e) => setPassword(e.target.value)}
+            value={password}
           />
           <button className="btn" disabled={isLoading}>
             Sign Up
